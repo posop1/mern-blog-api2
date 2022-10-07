@@ -33,7 +33,7 @@ app.use(express.json());
 app.use(cors());
 
 // router
-app.use('/', routes);
+app.use('/api', routes);
 
 const startApp = async () => {
   try {
