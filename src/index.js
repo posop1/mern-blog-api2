@@ -2,8 +2,9 @@ import express from 'express';
 import dotenv from 'dotenv';
 import mongoose from 'mongoose';
 import cors from 'cors';
-
 import console from 'console';
+
+import routes from './routes/index.js';
 
 dotenv.config();
 
@@ -32,11 +33,7 @@ app.use(express.json());
 app.use(cors());
 
 // router
-app.get('/', (req, res) => {
-  res.json({
-    message: 'hi',
-  });
-});
+app.use('/', routes);
 
 const startApp = async () => {
   try {

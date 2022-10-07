@@ -8,7 +8,7 @@
     "start": "node src/index.js",
     "start:dev": "nodemon src/index.js",
     "lint:check": "eslint ./src/*.js",
-    "lint:fix": "eslint --fix ./src/*.js"
+    "lint:fix": "eslint . --fix ./src"
   },
   "keywords": [],
   "author": "",
