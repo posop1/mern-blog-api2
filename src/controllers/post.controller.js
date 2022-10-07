@@ -1,8 +1,10 @@
+/* eslint-disable class-methods-use-this */
 import Post from '../models/Post.js';
 
 class PostController {
   async create(req, res) {
     try {
+      await res.json('asdasd');
     } catch (error) {
       res.status(500).json(error);
     }
@@ -10,7 +12,7 @@ class PostController {
 
   async getAll(req, res) {
     try {
-      res.json('asdasd');
+      await res.json('asdasd');
     } catch (error) {
       res.status(500).json(error);
     }
@@ -18,6 +20,7 @@ class PostController {
 
   async getOne(req, res) {
     try {
+      await res.json('asdasd');
     } catch (error) {
       res.status(500).json(error);
     }
@@ -25,6 +28,7 @@ class PostController {
 
   async update(req, res) {
     try {
+      await res.json('asdasd');
     } catch (error) {
       res.status(500).json(error);
     }
@@ -32,6 +36,7 @@ class PostController {
 
   async delete(req, res) {
     try {
+      await res.json('asdasd');
     } catch (error) {
       res.status(500).json(error);
     }

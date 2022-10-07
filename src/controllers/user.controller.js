@@ -1,20 +1,26 @@
-import User from '../models/User';
+import User from '../models/User.js';
 
-class userController {
+class UserController {
   async register(req, res) {
     try {
-    } catch (error) {}
+    } catch (error) {
+      res.status(500).json(error);
+    }
   }
 
   async login(req, res) {
     try {
-    } catch (error) {}
+    } catch (error) {
+      res.status(500).json(error);
+    }
   }
 
   async getMe(req, res) {
     try {
-    } catch (error) {}
+    } catch (error) {
+      res.status(500).json(error);
+    }
   }
 }
 
-export default new userController();
+export default new UserController();
